@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#navbar {
+  background-color: aqua;
+  width: 100%;
+  height: 30px;
+}
+
+body {
+  height: 100vh;
+  background-image: url(coffee.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0px auto;
+  justify-content: space-between;
+}
+.navbar a {
+  color: #fff;
+  transition: 0.2s ease;
+  text-decoration: none;
+}
+
+.navbar .logo {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.navbar .logo span {
+  color: #c06b3e;
+}
+
+.navbar .manu-link {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.navbar a:hover {
+  color: #c06b3e;
+}
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0% 20px;
+}
+
+.hero-section .contant {
+  color: #fff;
+  max-width: 1200px;
+  margin: 0% auto;
+  width: 100%;
+}
+
+.hero-section .contant h1 {
+  font-size: 3rem;
+  max-width: 600px;
+}
+
+.hero-section .contant p {
+  font-weight: 300;
+  margin-top: 15px;
+  max-width: 600px;
+}
+
+.hero-section .contant button {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 38px;
+  padding: 12px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.hero-section .contant button:hover {
+  color: #fff;
+  background-color: #c06b3e;
+}
+
+#menu-btn{
+  cursor: pointer;
+  color: #fff;
+  /* display: none; */
+}
+
+#close-menu-btn{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  #menu-btn #close-menu-btn{
+    display: block;
+  }
+  .navbar .manu-link {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: -260px;
+    flex-direction: column;
+    width: 260px;
+    height: 100vh;
+    padding: 70px 40px 0;
+  }
+  .navbar a{
+    color: #000;
+  }
+}
